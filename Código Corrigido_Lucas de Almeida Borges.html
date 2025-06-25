@@ -155,14 +155,9 @@
                 border-color: #af4334;
             }
 
-            .erro-mensagem {
-                display: none;
-                color: #af4334;
-                font-size: 0.7rem;
-            }
 
-            .form-validado .input-txt:invalid + .erro-mensagem,
-            .form-validado .input-wrapper .input-txt:invalid ~ .erro-mensagem {
+            .form-validado .input-txt:invalid ,
+            .form-validado .input-wrapper .input-txt:invalid {
                 display: block;
             }
 
@@ -288,12 +283,10 @@
                             class="input-txt"
                             type="text"
                             required
-                            pattern="([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2})|([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})"
                             minlength="11"
                             title="Digite um CPF válido ou um endereço de e-mail"
                             placeholder="Informe seu e-mail ou CPF"
                         />
-                        <span class="erro-mensagem">Digite um CPF válido ou um endereço de e-mail válido.</span>
                     </div>
                 </div>
                 <div class="form-linha">
@@ -311,7 +304,6 @@
                         <button type="button" class="mostrar-senha" aria-label="Mostrar ou ocultar senha">
                             <img src="olho aberto.png" alt="Ícone mostrar senha" />
                         </button>
-                        <span class="erro-mensagem">A senha deve ter no mínimo 8 caracteres.</span>
                     </div>
                 </div>
 
